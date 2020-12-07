@@ -22,5 +22,5 @@ class Subscript extends Component {
 export default markToggleDecorator({
   type: MARKS.SUBSCRIPT,
   title: 'Subscript',
-  icon: 'FormatItalic'
+  icon: 'ArrowDown'
 })(Subscript);

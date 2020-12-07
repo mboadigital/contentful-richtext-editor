@@ -22,5 +22,5 @@ class Superscript extends Component {
 export default markToggleDecorator({
   type: MARKS.SUPERSCRIPT,
   title: 'Superscript',
-  icon: 'FormatItalic'
+  icon: 'ArrowUp'
 })(Superscript);

@@ -3117,7 +3117,7 @@ var Subscript = /*#__PURE__*/function (_Component) {
 var Subscript$1 = /*#__PURE__*/markToggleDecorator({
   type: MARKS.SUBSCRIPT,
   title: 'Subscript',
-  icon: 'FormatItalic'
+  icon: 'ArrowDown'
 })(Subscript);
 
 var SuperscriptPlugin = function SuperscriptPlugin(_ref) {
@@ -3149,7 +3149,7 @@ var Superscript = /*#__PURE__*/function (_Component) {
 var Superscript$1 = /*#__PURE__*/markToggleDecorator({
   type: MARKS.SUPERSCRIPT,
   title: 'Superscript',
-  icon: 'FormatItalic'
+  icon: 'ArrowUp'
 })(Superscript);
 
 var styles$3 = {
