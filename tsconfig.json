@@ -1,0 +1,35 @@
+{
+  "include": ["src", "types"],
+  "compilerOptions": {
+    "target": "es5",
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    },
+    "noImplicitAny": false,
+    "allowJs": true,
+    "jsx": "react"
+  },
+  "linterOptions": {
+    "exclude": ["src/**"]
+  }
+}

@@ -1,0 +1,1 @@
+export const SUPPORTS_NATIVE_SLATE_HYPERLINKS: boolean;
