@@ -3098,6 +3098,28 @@ var SubscriptPlugin = function SubscriptPlugin(_ref) {
   });
 };
 
+var Subscript = /*#__PURE__*/function (_Component) {
+  _inheritsLoose(Subscript, _Component);
+
+  function Subscript() {
+    return _Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Subscript.prototype;
+
+  _proto.render = function render() {
+    return /*#__PURE__*/React__default.createElement(ToolbarIcon, this.props);
+  };
+
+  return Subscript;
+}(Component);
+
+var Subscript$1 = /*#__PURE__*/markToggleDecorator({
+  type: MARKS.SUBSCRIPT,
+  title: 'Subscript',
+  icon: 'FormatItalic'
+})(Subscript);
+
 var SuperscriptPlugin = function SuperscriptPlugin(_ref) {
   var richTextAPI = _ref.richTextAPI;
   return markPlugin({
@@ -3107,6 +3129,28 @@ var SuperscriptPlugin = function SuperscriptPlugin(_ref) {
     richTextAPI: richTextAPI
   });
 };
+
+var Superscript = /*#__PURE__*/function (_Component) {
+  _inheritsLoose(Superscript, _Component);
+
+  function Superscript() {
+    return _Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Superscript.prototype;
+
+  _proto.render = function render() {
+    return /*#__PURE__*/React__default.createElement(ToolbarIcon, this.props);
+  };
+
+  return Superscript;
+}(Component);
+
+var Superscript$1 = /*#__PURE__*/markToggleDecorator({
+  type: MARKS.SUPERSCRIPT,
+  title: 'Superscript',
+  icon: 'FormatItalic'
+})(Superscript);
 
 var styles$3 = {
   root: /*#__PURE__*/css({
@@ -6399,7 +6443,7 @@ var Toolbar = /*#__PURE__*/function (_React$Component) {
       disabled: props.disabled
     }, /*#__PURE__*/React__default.createElement(Paragraph$1, props), isNodeTypeEnabled(field, BLOCKS.HEADING_1) && /*#__PURE__*/React__default.createElement(Heading1, props), isNodeTypeEnabled(field, BLOCKS.HEADING_2) && /*#__PURE__*/React__default.createElement(Heading2, props), isNodeTypeEnabled(field, BLOCKS.HEADING_3) && /*#__PURE__*/React__default.createElement(Heading3, props), isNodeTypeEnabled(field, BLOCKS.HEADING_4) && /*#__PURE__*/React__default.createElement(Heading4, props), isNodeTypeEnabled(field, BLOCKS.HEADING_5) && /*#__PURE__*/React__default.createElement(Heading5, props), isNodeTypeEnabled(field, BLOCKS.HEADING_6) && /*#__PURE__*/React__default.createElement(Heading6, props)), isAnyMarkEnabled && /*#__PURE__*/React__default.createElement(EditorToolbarDivider, {
       testId: "mark-divider"
-    }), isMarkEnabled(field, MARKS.BOLD) && /*#__PURE__*/React__default.createElement(Bold$1, props), isMarkEnabled(field, MARKS.ITALIC) && /*#__PURE__*/React__default.createElement(Italic$1, props), isMarkEnabled(field, MARKS.UNDERLINE) && /*#__PURE__*/React__default.createElement(Underlined$1, props), isMarkEnabled(field, MARKS.CODE) && /*#__PURE__*/React__default.createElement(Code$1, props), isAnyHyperlinkEnabled && /*#__PURE__*/React__default.createElement(React__default.Fragment, null, /*#__PURE__*/React__default.createElement(EditorToolbarDivider, {
+    }), isMarkEnabled(field, MARKS.BOLD) && /*#__PURE__*/React__default.createElement(Bold$1, props), isMarkEnabled(field, MARKS.ITALIC) && /*#__PURE__*/React__default.createElement(Italic$1, props), isMarkEnabled(field, MARKS.UNDERLINE) && /*#__PURE__*/React__default.createElement(Underlined$1, props), isMarkEnabled(field, MARKS.CODE) && /*#__PURE__*/React__default.createElement(Code$1, props), isMarkEnabled(field, MARKS.SUPERSCRIPT) && /*#__PURE__*/React__default.createElement(Superscript$1, props), isMarkEnabled(field, MARKS.SUBSCRIPT) && /*#__PURE__*/React__default.createElement(Subscript$1, props), isAnyHyperlinkEnabled && /*#__PURE__*/React__default.createElement(React__default.Fragment, null, /*#__PURE__*/React__default.createElement(EditorToolbarDivider, {
       testId: "hyperlink-divider"
     }), /*#__PURE__*/React__default.createElement(HyperlinkToolbarIcon, props)), isAnyListEnabled && /*#__PURE__*/React__default.createElement(EditorToolbarDivider, {
       testId: "list-divider"
@@ -6417,7 +6461,7 @@ Toolbar.propTypes = {
 };
 
 function getValidationInfo(field) {
-  var isAnyMarkEnabled = isMarkEnabled(field, MARKS.BOLD) || isMarkEnabled(field, MARKS.ITALIC) || isMarkEnabled(field, MARKS.UNDERLINE) || isMarkEnabled(field, MARKS.CODE);
+  var isAnyMarkEnabled = isMarkEnabled(field, MARKS.BOLD) || isMarkEnabled(field, MARKS.ITALIC) || isMarkEnabled(field, MARKS.UNDERLINE) || isMarkEnabled(field, MARKS.CODE) || isMarkEnabled(field, MARKS.SUPERSCRIPT) || isMarkEnabled(field, MARKS.SUBSCRIPT);
   var isAnyHyperlinkEnabled = isNodeTypeEnabled(field, INLINES.HYPERLINK) || isNodeTypeEnabled(field, INLINES.ASSET_HYPERLINK) || isNodeTypeEnabled(field, INLINES.ENTRY_HYPERLINK);
   var isAnyListEnabled = isNodeTypeEnabled(field, BLOCKS.UL_LIST) || isNodeTypeEnabled(field, BLOCKS.OL_LIST) || isNodeTypeEnabled(field, BLOCKS.QUOTE) || isNodeTypeEnabled(field, BLOCKS.HR);
   return {

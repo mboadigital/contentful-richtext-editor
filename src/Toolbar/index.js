@@ -6,6 +6,8 @@ import { EditorToolbar, EditorToolbarDivider } from '@contentful/forma-36-react-
 import Bold from '../plugins/Bold';
 import Italic from '../plugins/Italic';
 import Underlined from '../plugins/Underlined';
+import Superscript from '../plugins/Superscript';
+import Subscript from '../plugins/Subscript';
 import Code from '../plugins/Code';
 import Quote from '../plugins/Quote';
 import {
@@ -197,6 +199,8 @@ export default class Toolbar extends React.Component {
           {isMarkEnabled(field, MARKS.ITALIC) && <Italic {...props} />}
           {isMarkEnabled(field, MARKS.UNDERLINE) && <Underlined {...props} />}
           {isMarkEnabled(field, MARKS.CODE) && <Code {...props} />}
+          {isMarkEnabled(field, MARKS.SUPERSCRIPT) && <Superscript {...props} />}
+          {isMarkEnabled(field, MARKS.SUBSCRIPT) && <Subscript {...props} />}
           {isAnyHyperlinkEnabled && (
             <React.Fragment>
               <EditorToolbarDivider testId="hyperlink-divider" />
@@ -220,7 +224,9 @@ function getValidationInfo(field) {
     isMarkEnabled(field, MARKS.BOLD) ||
     isMarkEnabled(field, MARKS.ITALIC) ||
     isMarkEnabled(field, MARKS.UNDERLINE) ||
-    isMarkEnabled(field, MARKS.CODE);
+    isMarkEnabled(field, MARKS.CODE) ||
+    isMarkEnabled(field, MARKS.SUPERSCRIPT) ||
+    isMarkEnabled(field, MARKS.SUBSCRIPT);
 
   const isAnyHyperlinkEnabled =
     isNodeTypeEnabled(field, INLINES.HYPERLINK) ||
