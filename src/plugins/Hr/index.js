@@ -41,6 +41,7 @@ export const HrPlugin = () => {
       if (props.node.type === BLOCKS.HR) {
         return (
           <hr
+            style={{border: 0}}
             className={cx(styles.hr, props.isSelected && styles.hrSelected)}
             {...props.attributes}
           />
