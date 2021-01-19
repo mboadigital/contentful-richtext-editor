@@ -4477,7 +4477,7 @@ var OrderedList = /*#__PURE__*/listToggleDecorator({
 });
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteralLoose(["\n    &::after {\n      background: ", ";\n      -webkit-box-shadow: 0px 0px 5px ", ";\n      box-shadow: 0px 0px 5px ", ";\n    }\n  "]);
+  var data = _taggedTemplateLiteralLoose(["\n    border: 0;\n    &::after {\n      background: ", ";\n      -webkit-box-shadow: 0px 0px 5px ", ";\n      box-shadow: 0px 0px 5px ", ";\n    }\n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -4487,7 +4487,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteralLoose(["\n    height: ", ";\n    background: transparent;\n    position: relative;\n    margin: 0 0 ", ";\n    &:hover {\n      cursor: pointer;\n    }\n    &::after {\n      content: '';\n      position: absolute;\n      width: 100%;\n      height: 1px;\n      background: ", ";\n      top: 50%;\n    }\n  "]);
+  var data = _taggedTemplateLiteralLoose(["\n    height: ", ";\n    background: transparent;\n    position: relative;\n    margin: 0 0 ", ";\n    border: 0;\n    &:hover {\n      cursor: pointer;\n    }\n    &::after {\n      content: '';\n      position: absolute;\n      width: 100%;\n      height: 1px;\n      background: ", ";\n      top: 50%;\n    }\n  "]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -4504,6 +4504,9 @@ var HrPlugin = function HrPlugin() {
     renderNode: function renderNode(props, _editor, next) {
       if (props.node.type === richTextTypes.BLOCKS.HR) {
         return /*#__PURE__*/React__default.createElement("hr", _extends({
+          style: {
+            border: 0
+          },
           className: emotion.cx(styles$8.hr, props.isSelected && styles$8.hrSelected)
         }, props.attributes));
       }
