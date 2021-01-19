@@ -12,6 +12,7 @@ const styles = {
     background: transparent;
     position: relative;
     margin: 0 0 ${tokens.spacingL};
+    border: 0;
     &:hover {
       cursor: pointer;
     }
@@ -25,6 +26,7 @@ const styles = {
     }
   `,
   hrSelected: css`
+    border: 0;
     &::after {
       background: ${tokens.colorPrimary};
       -webkit-box-shadow: 0px 0px 5px ${tokens.colorPrimary};
