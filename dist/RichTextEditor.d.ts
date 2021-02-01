@@ -7,6 +7,7 @@ declare namespace RichTextEditor {
 export default RichTextEditor;
 export class ConnectedRichTextEditor {
     static propTypes: {
+        minHeight: any;
         sdk: any;
         value: any;
         isDisabled: any;

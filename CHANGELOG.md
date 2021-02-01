@@ -3,6 +3,125 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.1](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.17.0...@contentful/field-editor-rich-text@0.17.1) (2021-01-25)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
+# [0.17.0](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.16.3...@contentful/field-editor-rich-text@0.17.0) (2021-01-20)
+
+
+### Features
+
+* update minimal forma-36 versions to use updated design ([#565](https://github.com/contentful/field-editors/issues/565)) ([332c734](https://github.com/contentful/field-editors/commit/332c734bfaf54f0e9773fcbb460d743b1f5459ec))
+
+
+
+
+
+## [0.16.3](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.16.2...@contentful/field-editor-rich-text@0.16.3) (2021-01-20)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
+## [0.16.2](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.16.1...@contentful/field-editor-rich-text@0.16.2) (2021-01-13)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
+## [0.16.1](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.16.0...@contentful/field-editor-rich-text@0.16.1) (2021-01-12)
+
+
+### Bug Fixes
+
+* use forma tokens for border radiuses ([#553](https://github.com/contentful/field-editors/issues/553)) ([f4eb745](https://github.com/contentful/field-editors/commit/f4eb74568c7bc0cc25028542821ba64e50e226bd))
+
+
+
+
+
+# [0.16.0](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.15.5...@contentful/field-editor-rich-text@0.16.0) (2021-01-12)
+
+
+### Features
+
+* update minimal required Forma version to the 3.73.12 ([#552](https://github.com/contentful/field-editors/issues/552)) ([2816fd9](https://github.com/contentful/field-editors/commit/2816fd960c28815faebf49a9ef8f4c4c0d91fc36))
+
+
+
+
+
+## [0.15.5](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.15.4...@contentful/field-editor-rich-text@0.15.5) (2021-01-11)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
+## [0.15.4](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.15.3...@contentful/field-editor-rich-text@0.15.4) (2020-12-23)
+
+
+### Bug Fixes
+
+* use correct prop types ([#538](https://github.com/contentful/field-editors/issues/538)) ([f878a3a](https://github.com/contentful/field-editors/commit/f878a3a4f5c2d32455ac7932540d612a1c1a461a))
+
+
+
+
+
+## [0.15.3](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.15.2...@contentful/field-editor-rich-text@0.15.3) (2020-12-21)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
+## [0.15.2](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.15.1...@contentful/field-editor-rich-text@0.15.2) (2020-12-16)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
+## [0.15.1](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.15.0...@contentful/field-editor-rich-text@0.15.1) (2020-12-16)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
+# [0.15.0](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.14.39...@contentful/field-editor-rich-text@0.15.0) (2020-12-16)
+
+
+### Features
+
+* minHeight props ([#529](https://github.com/contentful/field-editors/issues/529)) ([672e5d1](https://github.com/contentful/field-editors/commit/672e5d10356547ba99888dfeedc5ffd7b6e264cb))
+
+
+
+
+
+## [0.14.39](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.14.38...@contentful/field-editor-rich-text@0.14.39) (2020-12-10)
+
+**Note:** Version bump only for package @contentful/field-editor-rich-text
+
+
+
+
+
 ## [0.14.38](https://github.com/contentful/field-editors/compare/@contentful/field-editor-rich-text@0.14.37...@contentful/field-editor-rich-text@0.14.38) (2020-11-23)
 
 **Note:** Version bump only for package @contentful/field-editor-rich-text

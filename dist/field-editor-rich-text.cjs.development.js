@@ -839,7 +839,7 @@ var styles$1 = {
     background: tokens.colorElementLight,
     padding: '0px',
     color: tokens.colorTextMid,
-    borderRadius: '2px'
+    borderRadius: tokens.borderRadiusSmall
   }),
   textLink: /*#__PURE__*/emotion.css({
     fontSize: 'inherit'
@@ -5203,7 +5203,7 @@ var styles$9 = {
     background: tokens.colorWhite,
     boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(0, 0, 0, 0.3)',
     border: "1px solid " + tokens.colorElementDark,
-    borderRadius: '3px',
+    borderRadius: tokens.borderRadiusMedium,
     fontFamily: tokens.fontStackPrimary,
     width: '500px',
     overflowY: 'auto'
@@ -5281,6 +5281,8 @@ var styles$9 = {
 };
 var itemPropType = /*#__PURE__*/PropTypes.shape({
   label: PropTypes.string,
+  icon: PropTypes.string,
+  thumbnail: PropTypes.string,
   callback: PropTypes.func
 });
 
@@ -6513,7 +6515,7 @@ var styles$c = {
     position: 'relative'
   }),
   editor: /*#__PURE__*/emotion.css({
-    borderRadius: '0 0 3px 3px',
+    borderRadius: "0 0 " + tokens.borderRadiusMedium + " " + tokens.borderRadiusMedium,
     border: STYLE_EDITOR_BORDER,
     borderTop: 0,
     padding: '20px',
@@ -6667,7 +6669,9 @@ var ConnectedRichTextEditor = /*#__PURE__*/function (_React$Component) {
   ;
 
   _proto.render = function render() {
-    var classNames = emotion.cx(styles$c.editor, this.props.isDisabled ? styles$c.disabled : styles$c.enabled, this.props.isToolbarHidden && styles$c.hiddenToolbar);
+    var classNames = emotion.cx(styles$c.editor, this.props.minHeight !== undefined ? emotion.css({
+      minHeight: this.props.minHeight
+    }) : undefined, this.props.isDisabled ? styles$c.disabled : styles$c.enabled, this.props.isToolbarHidden && styles$c.hiddenToolbar);
     return /*#__PURE__*/React__default.createElement("div", {
       className: styles$c.root,
       "data-test-id": "rich-text-editor"
@@ -6707,6 +6711,7 @@ var ConnectedRichTextEditor = /*#__PURE__*/function (_React$Component) {
  */
 
 ConnectedRichTextEditor.propTypes = {
+  minHeight: /*#__PURE__*/PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   sdk: /*#__PURE__*/PropTypes.shape({
     field: /*#__PURE__*/PropTypes.shape({
       id: PropTypes.string.isRequired,
